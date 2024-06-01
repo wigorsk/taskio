@@ -6,6 +6,46 @@
     <link rel="stylesheet" href="../styles/output.css">
     <title>Home</title>
 </head>
-<body>
+<body class="h-screen bg-neutral-900">
+    <div class="container mx-auto h-screen flex flex-col items-center gap-36">
+
+        <header class="bg-neutral-700 w-screen p-4 flex items-center justify-between">
+
+            <div id="opacity" class="hidden w-screen h-screen bg-black/70 absolute left-0 top-0"></div>
+
+            <span id="menu">
+                <svg class="size-12 stroke-2 stroke-neutral-300 hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+            </span>
+            
+            <nav class="hidden absolute left-4 top-3 bg-neutral-700 p-5 rounded-b-lg rounded-tr-lg">
+                <ul class="flex flex-col gap-4 text-neutral-300 text-xl font-bold">
+
+                    <li id="close" class="w-full flex justify-end">
+                        <svg class="size-6 stroke-2 stroke-neutral-300 hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
+                    </li>
+
+                    <li class="flex items-center gap-3 hover:cursor-pointer"><div class="w-9 h-9 bg-neutral-300"></div>Tool 1</li>
+                    <li class="flex items-center gap-3 hover:cursor-pointer"><div class="w-9 h-9 bg-neutral-300"></div>Tool 2</li>
+                    <li class="flex items-center gap-3 hover:cursor-pointer"><div class="w-9 h-9 bg-neutral-300"></div>Tool 3</li>
+                
+                </ul>
+            </nav>
+
+            <div class="w-14 h-14 bg-neutral-300 hover:cursor-pointer"></div>
+            <div class="w-14 h-14 bg-neutral-300 rounded-full hover:cursor-pointer"></div>
+        </header>
+
+        <main class="flex flex-col items-center gap-20">
+            <p class="text-neutral-300 font-bold text-xl text-center">
+                Este lugar parece pequeno,
+                <span class="block">vazio desse jeito vai encher de pó!</span> 
+                :(
+            </p>
+            <button class="bg-green-800 px-6 py-4 font-bold text-neutral-300 text-xl uppercase rounded-lg">Adicionar tarefa</button>
+        </main>
+
+    </div>
+
+    <script src="./script/script.js"></script>
 </body>
 </html>
